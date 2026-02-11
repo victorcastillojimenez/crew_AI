@@ -12,7 +12,7 @@ career_profiler → job_market_scout → corporate_culture_researcher → applic
 
 | Agente | Rol | Herramientas |
 |--------|-----|-------------|
-| `career_profiler` | Analiza CV y sugiere roles | — |
+| `career_profiler` | Analiza CV y sugiere roles | FileReadTool |
 | `job_market_scout` | Busca ofertas reales online | SerperDevTool |
 | `corporate_culture_researcher` | Investiga cultura empresarial | SerperDevTool |
 | `application_strategist` | Redacta postulaciones | — |
