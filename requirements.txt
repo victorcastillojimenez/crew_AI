@@ -1,0 +1,4 @@
+crewai
+crewai-tools
+litellm
+openai==1.83.0
