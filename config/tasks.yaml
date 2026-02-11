@@ -1,0 +1,38 @@
+profile_assessment_task:
+  description: >
+    1. Carefully read the provided CV text: {cv_text}.
+    2. Identify the top 5 technical skills and top 3 soft skills.
+    3. Suggest 3 specific job titles (e.g., Junior Data Engineer, Cloud Associate).
+    4. Provide a brief justification for each role based on the student's background.
+  expected_output: >
+    A structured profile report in Spanish containing: Analysis of skills, 3 suggested roles, 
+    and a professional summary of the candidate's potential.
+  agent: career_profiler
+
+job_scouting_task:
+  description: >
+    1. Take the 3 suggested roles from the previous analysis.
+    2. Use search tools to find 3 real, active job URLs (LinkedIn, Glassdoor, etc.).
+    3. Ensure the roles are suitable for a student or junior profile.
+  expected_output: >
+    A list of 3 job postings including: Job Title, Company Name, and URL.
+  agent: job_market_scout
+
+company_intelligence_task:
+  description: >
+    1. Research the companies identified in the job scouting phase.
+    2. Find information about their mission, recent tech projects, and "work with us" philosophy.
+    3. Identify 2 specific "pain points" or values the company has mentioned recently.
+  expected_output: >
+    An intelligence brief for each company highlighting key facts to use in an application.
+  agent: corporate_culture_researcher
+
+custom_outreach_drafting_task:
+  description: >
+    1. Combine the student's profile, the job requirements, and the company intelligence.
+    2. Write a personalized application message (Cover Letter/LinkedIn Message) for each company.
+    3. The tone must be professional, enthusiastic, and NOT sound like AI.
+    4. MUST BE WRITTEN IN SPANISH.
+  expected_output: >
+    3 personalized application messages in Markdown format, ready to be sent.
+  agent: application_strategist
