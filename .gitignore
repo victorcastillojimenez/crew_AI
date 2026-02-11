@@ -13,5 +13,11 @@ ENV/
 .vscode/
 .idea/
 
-# Archivos de datos o logs (opcional)
-*.logd
+# Variables de entorno (API keys)
+.env
+
+# Archivos de datos o logs
+*.log
+
+.agent/
+.agent/*
