@@ -28,7 +28,7 @@ La aplicación implementa un sistema de **function calling inteligente** que per
 
 1️⃣  buscar_ofertas_empleo(rol, ubicacion, modalidad)
     ├─ Intenta: API Serper → Búsqueda web real
-    └─ Fallback: Ofertas hardcodeadas personalizadas para Victor
+    └─ Fallback: Ofertas hardcodeadas personalizadas para xxxxx
        • Backend Engineer (FastAPI) - DataFlow AI
        • ML Engineer / Data Scientist - BigData Insights
        • Full Stack Developer - Desarrollo Web Integral
@@ -44,7 +44,7 @@ La aplicación implementa un sistema de **function calling inteligente** que per
 
 3️⃣  extraer_datos_cv(ruta_cv)
     ├─ Intenta: OpenAI GPT → Extrae datos de cualquier CV
-    └─ Fallback: Datos JSON hardcodeados de Victor Castillo
+    └─ Fallback: Datos JSON hardcodeados de xxxxx
        • Datos personales, habilidades, experiencia
        • Lenguajes: Python, Java, C#, JavaScript, R
        • Tecnologías: FastAPI, Angular, Docker, etc.
@@ -101,7 +101,7 @@ function_calling/
 │   ├─ buscar_ofertas_empleo()           (con fallback de 5 ofertas)
 │   ├─ generar_carta_presentacion()      (con fallback de carta)
 │   ├─ extraer_datos_cv()                (con fallback de datos)
-│   └─ _extraer_datos_cv_fallback()      (datos hardcodeados Victor)
+│   └─ _extraer_datos_cv_fallback()      (datos hardcodeados xxxxx)
 │
 ├── cv_extractor.py              🔍 EXTRACTOR CON OpenAI
 │   ├─ ExtractorCV.extraer_datos_estructurados()  (dinámico con IA)
@@ -253,13 +253,13 @@ de AI/LLM Developer...
 
 🤖 Sistema:
   1. Intenta OpenAI → Extrae dinámicamente cualquier CV
-  2. Si falla → Datos JSON fallback (Victor)
+  2. Si falla → Datos JSON fallback (xxxxx)
   3. Resultado: JSON estructurado
 
 📊 Resultado:
 {
-  "nombre": "Victor Castillo Jimenez",
-  "email": "victorcastillojimenez04@gmail.com",
+  "nombre": "xxxxxx",
+  "email": "xxxxxx@gmail.com",
   "lenguajes_programacion": ["Python", "Java", "C#", ...],
   "tecnologias": ["FastAPI", "Angular", "Docker", ...],
   ...
@@ -354,7 +354,7 @@ Este proyecto implementa:
 
 ## 📝 Notas Importantes
 
-1. **Victor Castillo** es el candidato de ejemplo. Los fallbacks están personalizados para él
+1. **xxxxx** es el candidato de ejemplo. Los fallbacks están personalizados para él
 2. Los fallbacks funcionan sin internet (datos hardcodeados)
 3. Groq formatea automáticamente JSON en respuestas bonitas
 4. RAG mejora la calidad de análisis significativamente
